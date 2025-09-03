@@ -1,13 +1,18 @@
-let i , j , k;
+let i = 1;
 
-for(i=1 ; i <= 5 ;i++){
-    let str ='';
-    for(k=1 ; k <i ; k++){
-        str += '  ';
+while(i <= 5){
+    let str = '';
+    let k = 1;
+    while(k < i){
+        str += "  ";
+        k++;
     }
-    for(j=i ; j<=5*2-i ; j++){
-        str += '* ';
+
+    let j = i;
+    while(j <= 5*2-i){
+        str += "* ";
+        j++;
     }
     console.log(str);
-    
+    i++;
 }
